@@ -36,3 +36,13 @@
     transform: translateY(0);
   }
 }
+
+@mixin clickHoverAnimation($second) {
+  & {
+    transition: all $second;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}
