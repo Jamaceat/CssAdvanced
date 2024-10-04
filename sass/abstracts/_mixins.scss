@@ -11,3 +11,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin absCenter {
+  position: absolute;
+  @include centerhv();
+}
+
+@mixin absCenterWithTransition {
+  @include absCenter();
+  transform: translate(-50%, -50%) scale(0.5);
+}
